@@ -80,26 +80,25 @@ li::before {
     justify-content: space-evenly;
     align-items: center;
 }
-/* gives the image a border, and scalable sizing. */
+/* gives the image a border and makes sizing better. */
 .bio img {
     height: 50%;
     width: 20%;
     object-fit: fill;
-    border: 10px solid var(--primary-color);
 }
 
 /* aligns paragraph text in the center of the p element */
 .bio div p {
     text-align: center;
 }
-/* Bio Section Styling End */
-/* Work Section Styling Start */
-.work div {
+
+/* this will start the project section of the styling */
+.project div {
     flex: 80%;
     display: flex;
     flex-wrap: wrap;
 }
-/* stretches the surf report flex item across the flex item, then makes it a flexbox, also adds a margin to the bottom and right of the flex item */
+/* this will stretch project 1 across the flex item making it bigger, also adds a margin to the bottom and right of the flex item */
 .project-1 {
     flex: 40%;
     background-position: center;
@@ -111,35 +110,35 @@ li::before {
     margin-right: 10px;
 }
 
-/* gives the link in surf report item a background color, text color, scalable font size, and remove text-decorations */
+/* provides link for the first project with the background and font, etc */
 .project-1 a {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-decoration: none;
     font-size: 1.5vw;
 }
-/* changes the opacity of the link when it is hovered over with a mouse */
+/* highlights project 1 when you go over with moouse */
 .project-1 a:hover {
     opacity: 75%;
 }
-/* stretches the img across the flex item and scales its size accordingly */
+/* stretches the img across the flex and changes size */
 .project-1 a img {
-    height: 40%;
-    width: 90%;
+    height: 70%;
+    width: 80%;
     object-fit: fill;
 }
-/* stretches the led wall, quixotic, pastel puzzles, and run buddy elements 47% across the flex item, then makes them a flexbox, also adds a margin to the bottom and right of the flex item */
+/* stretches the different projects besides project-1 elements 47% across the flex item, then makes them a flexbox, also adds a margin to the bottom and right of the flex item */
 .coder-cuisine, .project-3, .project-4, .project-5 {
-    flex: 47%;
+    flex: 30%;
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: flex-start;
-    border: solid 10px var(--primary-color);
-    margin-bottom: 10px;
-    margin-right: 10px;
+    border: solid 5px var(--primary-color);
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
-/* gives the link in the led wall, quixotic, pastel puzzles, and run buddy elements items a background color, text color, scalable font size, and remove text-decorations */
+/* gives the linkfor the projects 2-5items a background color, text color, etc. */
 .link-format {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -147,18 +146,18 @@ li::before {
     font-size: 1vw;
 }
 
-/* changes the opacity of the links when they are hovered with the mouse */
+/* Changes color of the links when you go over with mouse on projects 2-5 */
 .link-format:hover {
-    opacity: 75%;
+    opacity: 65%;
 }
-/* stretches the img across the flex item and scales its size accordingly */
+/* stretches the image across the flex item and changes the size */
 .img-format {
-    height: 30%;
-    width: 70%;
+    height: 50%;
+    width: 50%;
     object-fit: fill;
 }
-/* Work Section Styling End */
-/* Contact Section Styling Start */
+
+/* This section is now styling the contact me */
 .contact ul {
     width: 100%;
     display: flex;
@@ -174,4 +173,3 @@ li::before {
 .contact ul li a {
     color: var(--primary-color);
 }
-/* Contact Section Styling End */
