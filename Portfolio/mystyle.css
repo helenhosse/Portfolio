@@ -93,7 +93,7 @@ li::before {
 }
 
 /* this will start the project section of the styling */
-.project div {
+#projects div {
     flex: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -154,7 +154,7 @@ li::before {
 .img-format {
     height: 50%;
     width: 50%;
-    object-fit: fill;
+    object-fit: contain;
 }
 
 /* This section is now styling the contact me */
@@ -173,3 +173,59 @@ li::before {
 .contact ul li a {
     color: var(--primary-color);
 }
+
+
+/* Styling for screens tablet sized and smaller */
+@media screen and (max-width: 768px) {
+    /* changes section flex formatting to be in colum flow. */
+    .section-formating {
+        display: flex;
+        flex-flow: column;
+        margin: 10px 0;
+    }
+    /* Moves section headings to the middle of the page, removes the side border, and adds a bottom border. */
+    .section-header {
+    flex: 100%;
+    text-align: center;
+    border-right: 0;
+    border-bottom: 4px solid var(--primary-color);
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+    font-size: 4.5vw;
+    }
+    /* Stretches work child elements all the way across the page, and adds scaling font to the links */
+    .coder-cuisine, .project-3, .project-4, .project-5 {
+        flex: 100%;
+        margin-left: 10px;
+    }
+    .link-format {
+        font-size: 2vw;
+    }
+    .surf-report a {
+        font-size: 2vw;
+    }
+    .surf-report {
+        margin-left: 10px;
+    }
+    /* Makes the ul item stretch the length of the page */
+    .contact-me ul {
+        width: 100%;
+    }
+    /* gives the quote in the hero element scalable font size */
+    .hero h3 {
+        font-size: 2.5vw;
+    }
+}
+/* Styling for screens 575px and smaller */
+@media screen and (max-width: 575px) {
+    /* increases the scalable font size of the work section links */
+    .link-format {
+        font-size: 2.5vw;
+    }
+    .surf-report a {
+        font-size: 2.5vw;
+    }
+}
+/* Scalable Screen Styling End */
