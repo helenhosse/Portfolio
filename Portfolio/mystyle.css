@@ -1,7 +1,10 @@
+
+/* Whole page styling, deafault butts element against one another and the edges of the view. */
+
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 40px;
 }
 
 body {
@@ -11,7 +14,7 @@ body {
 header {
     padding: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color:darkseagreen;
+    background-color:#8fbc8f;
     color: #ffffff;
 }
 
@@ -129,12 +132,12 @@ li::before {
 }
 /* stretches the different projects besides project-1 elements 47% across the flex item, then makes them a flexbox, also adds a margin to the bottom and right of the flex item */
 .coder-cuisine, .project-3, .project-4, .project-5 {
-    flex: 30%;
+    flex: 20%;
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: flex-start;
-    border: solid 5px var(--primary-color);
+    /*border: solid 5px var(--primary-color);*/
     margin-bottom: 5px;
     margin-right: 5px;
 }
@@ -165,7 +168,6 @@ li::before {
     list-style: none;
     justify-content: space-evenly;
     align-items: center;
-    text-decoration-line: underline;
     font-weight: bold;
     font-size: 20px;
     color: var(--primary-color);
