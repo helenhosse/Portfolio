@@ -40,9 +40,9 @@ I have used HTML and CSS to complete this personal portfolio
 
 ## Links for Submission
 
-Deployed website link: https://helenhosse.github.io/Coding-Quiz/
+Deployed website link: https://helenhosse.github.io/Portfolio/
 
-GitHub repository link: https://github.com/helenhosse/Coding-Quiz.git
+GitHub repository link: https://github.com/helenhosse/Portfolio
 
 ## Credit
 

@@ -59,6 +59,9 @@ header nav ul li {
     margin-left: 25px;
     color: black;
 }
+header ul li a {
+    color: black;
+} 
 
 li::before {
     content: "•"; /* Insert content that looks like bullets */
@@ -201,15 +204,15 @@ li::before {
 } 
 
 
-/* Styling for screens tablet sized and smaller */
+/*  This section is where I was able to update the format when using different size screens*/
 @media screen and (max-width: 768px) {
-    /* changes section flex formatting to be in colum flow. */
+    /* This section will put the items and photos in a column when there is a smaller screen. */
     .section-formating {
         display: flex;
         flex-flow: column;
         margin: 10px 0;
     }
-    /* Moves section headings to the middle of the page, removes the side border, and adds a bottom border. */
+    /* this part was needed to make the section header readable when condensed. */
     .section-header {
     flex: 100%;
     text-align: center;
@@ -221,7 +224,6 @@ li::before {
     margin-bottom: 10px;
     font-size: 4.5vw;
     }
-    /* Stretches work child elements all the way across the page, and adds scaling font to the links */
      .coder-cuisine, .project-3, .project-4, .project-5 {
         flex: 100%;
         margin-left: 10px;
@@ -239,16 +241,12 @@ li::before {
     .project-1 {
         margin-left: 10px;
     }
-    /* Makes the ul item stretch the length of the page */
+    /* This was needed to make the contact me section smaller */
     .contact-me ul {
         width: 100%;
     }
-    /* gives the quote in the hero element scalable font size */
-    .hero h3 {
-        font-size: 2.5vw;
-    }
-}
-/* Styling for screens 575px and smaller */
+  
+/* Since I added the above, I just needed to switch the size of the formatting of projects 2-5 and the size of the first project */
 @media screen and (max-width: 575px) {
     /* increases the scalable font size of the work section links */
     .link-format {
@@ -257,6 +255,4 @@ li::before {
     .project-1 a {
         font-size: 2.5vw;
     }
-}
-/* Scalable Screen Styling End */
-
+}}
